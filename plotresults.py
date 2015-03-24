@@ -63,7 +63,7 @@ def main(argv):
     print >> index_html, """
 <html>
 <head>
-<title> PyBindGen Benchmarks </title>
+<title> Python Binding Benchmark </title>
 </head>
 
 <body>

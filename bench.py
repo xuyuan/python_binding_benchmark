@@ -13,6 +13,7 @@ import testapi_pybindgen
 import testapi_boost
 import testapi_swig
 import testapi_sip
+import testapi_cython
 
 
 def bench(mod, dom, elem):
@@ -113,6 +114,9 @@ def main():
     env.appendChild(dom.createElement('pybindgen')).appendChild(dom.createTextNode(
             subprocess.Popen(["bzr", "version-info", '--check-clean'],
                              stdout=subprocess.PIPE, stderr=subprocess.STDOUT).communicate()[0]))
+    env.appendChild(dom.createElement('cython')).appendChild(dom.createTextNode(
+            subprocess.Popen(["cython", "--version"],
+                             stdout=subprocess.PIPE, stderr=subprocess.STDOUT).communicate()[0]))
 
     env.appendChild(dom.createElement('cpu')).appendChild(dom.createTextNode(
             file("/proc/cpuinfo").read()))
@@ -144,6 +148,11 @@ def main():
     sip = res.appendChild(dom.createElement('sip'))
     sip.setAttribute("module-file-size", repr(os.stat("testapi_sip.so").st_size))
     bench(testapi_sip, dom, sip)
+
+    print "cython results:"
+    sip = res.appendChild(dom.createElement('cython'))
+    sip.setAttribute("module-file-size", repr(os.stat("testapi_cython.so").st_size))
+    bench(testapi_cython, dom, sip)
 
     if len(sys.argv) == 3:
         f = open(sys.argv[1], "wb")

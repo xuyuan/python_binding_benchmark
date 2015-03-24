@@ -60,6 +60,8 @@ Original-Maintainer: Debian Boost Team &lt;pkg-boost-devel@lists.alioth.debian.o
 </boost_python>
     <pybindgen>bzr: ERROR: Not a branch: &quot;/home/xu/projects/dai/python_binding_benchmark/&quot;.
 </pybindgen>
+    <cython>Cython version 0.20.2
+</cython>
     <cpu>processor	: 0
 vendor_id	: GenuineIntel
 cpu family	: 6
@@ -67,7 +69,7 @@ model		: 42
 model name	: Intel(R) Core(TM) i7-2640M CPU @ 2.80GHz
 stepping	: 7
 microcode	: 0x26
-cpu MHz		: 3212.453
+cpu MHz		: 3265.171
 cache size	: 4096 KB
 physical id	: 0
 siblings	: 4
@@ -93,7 +95,7 @@ model		: 42
 model name	: Intel(R) Core(TM) i7-2640M CPU @ 2.80GHz
 stepping	: 7
 microcode	: 0x26
-cpu MHz		: 3299.953
+cpu MHz		: 3300.062
 cache size	: 4096 KB
 physical id	: 0
 siblings	: 4
@@ -119,7 +121,7 @@ model		: 42
 model name	: Intel(R) Core(TM) i7-2640M CPU @ 2.80GHz
 stepping	: 7
 microcode	: 0x26
-cpu MHz		: 3239.687
+cpu MHz		: 1882.562
 cache size	: 4096 KB
 physical id	: 0
 siblings	: 4
@@ -145,7 +147,7 @@ model		: 42
 model name	: Intel(R) Core(TM) i7-2640M CPU @ 2.80GHz
 stepping	: 7
 microcode	: 0x26
-cpu MHz		: 2203.468
+cpu MHz		: 3301.265
 cache size	: 4096 KB
 physical id	: 0
 siblings	: 4
@@ -169,52 +171,64 @@ power management:
   </environment>
   <results>
     <pybindgen module-file-size="56168">
-      <test description="call function with no arguments" time="1.1371619701385498"/>
-      <test description="call function taking 3 doubles" time="2.4281749725341797"/>
-      <test description="call class constructor with no arguments" time="2.4675450325012207"/>
-      <test description="call class constructor with double" time="6.711143970489502"/>
-      <test description="call simple method" time="1.5005829334259033"/>
-      <test description="call overloaded method 1" time="4.155841112136841"/>
-      <test description="call overloaded method 2" time="1.8909149169921875"/>
-      <test description="call non-overridden virtual method with double" time="2.1038191318511963"/>
-      <test description="call python-overridden virtual method from Python" time="1.185917854309082"/>
-      <test description="call python-overridden virtual method from C++" time="3.022844076156616"/>
+      <test description="call function with no arguments" time="1.125014066696167"/>
+      <test description="call function taking 3 doubles" time="2.375495195388794"/>
+      <test description="call class constructor with no arguments" time="2.1286158561706543"/>
+      <test description="call class constructor with double" time="8.720119953155518"/>
+      <test description="call simple method" time="1.391880989074707"/>
+      <test description="call overloaded method 1" time="5.6159679889678955"/>
+      <test description="call overloaded method 2" time="1.8906118869781494"/>
+      <test description="call non-overridden virtual method with double" time="2.116676092147827"/>
+      <test description="call python-overridden virtual method from Python" time="1.2013821601867676"/>
+      <test description="call python-overridden virtual method from C++" time="3.1161749362945557"/>
     </pybindgen>
     <boost_python module-file-size="583016">
-      <test description="call function with no arguments" time="1.4615600109100342"/>
-      <test description="call function taking 3 doubles" time="2.227130889892578"/>
-      <test description="call class constructor with no arguments" time="6.22730278968811"/>
-      <test description="call class constructor with double" time="6.997045040130615"/>
-      <test description="call simple method" time="2.87703800201416"/>
-      <test description="call overloaded method 1" time="2.958601951599121"/>
-      <test description="call overloaded method 2" time="3.1763219833374023"/>
-      <test description="call non-overridden virtual method with double" time="2.5165510177612305"/>
-      <test description="call python-overridden virtual method from Python" time="1.3930511474609375"/>
-      <test description="call python-overridden virtual method from C++" time="3.179961919784546"/>
+      <test description="call function with no arguments" time="1.4744369983673096"/>
+      <test description="call function taking 3 doubles" time="2.331690788269043"/>
+      <test description="call class constructor with no arguments" time="6.1049041748046875"/>
+      <test description="call class constructor with double" time="6.92284893989563"/>
+      <test description="call simple method" time="2.9569268226623535"/>
+      <test description="call overloaded method 1" time="3.035700798034668"/>
+      <test description="call overloaded method 2" time="3.0438649654388428"/>
+      <test description="call non-overridden virtual method with double" time="2.594801187515259"/>
+      <test description="call python-overridden virtual method from Python" time="1.5429179668426514"/>
+      <test description="call python-overridden virtual method from C++" time="3.3012189865112305"/>
     </boost_python>
     <swig module-file-size="281760" module-python-file-size="3700">
-      <test description="call function with no arguments" time="1.3511769771575928"/>
-      <test description="call function taking 3 doubles" time="2.2315988540649414"/>
-      <test description="call class constructor with no arguments" time="52.95554995536804"/>
-      <test description="call class constructor with double" time="59.599579095840454"/>
-      <test description="call simple method" time="3.8350179195404053"/>
-      <test description="call overloaded method 1" time="6.428094148635864"/>
-      <test description="call overloaded method 2" time="5.602816104888916"/>
-      <test description="call non-overridden virtual method with double" time="4.6888110637664795"/>
-      <test description="call python-overridden virtual method from Python" time="3.3473751544952393"/>
-      <test description="call python-overridden virtual method from C++" time="4.579927206039429"/>
+      <test description="call function with no arguments" time="1.4690451622009277"/>
+      <test description="call function taking 3 doubles" time="2.4489030838012695"/>
+      <test description="call class constructor with no arguments" time="51.20980882644653"/>
+      <test description="call class constructor with double" time="62.74170899391174"/>
+      <test description="call simple method" time="5.54270601272583"/>
+      <test description="call overloaded method 1" time="5.562104940414429"/>
+      <test description="call overloaded method 2" time="6.408900022506714"/>
+      <test description="call non-overridden virtual method with double" time="7.509788990020752"/>
+      <test description="call python-overridden virtual method from Python" time="2.1093058586120605"/>
+      <test description="call python-overridden virtual method from C++" time="3.8422679901123047"/>
     </swig>
     <sip module-file-size="79376">
-      <test description="call function with no arguments" time="1.8898899555206299"/>
-      <test description="call function taking 3 doubles" time="2.6068480014801025"/>
-      <test description="call class constructor with no arguments" time="4.562607049942017"/>
-      <test description="call class constructor with double" time="8.57718801498413"/>
-      <test description="call simple method" time="3.40289306640625"/>
-      <test description="call overloaded method 1" time="4.7763519287109375"/>
-      <test description="call overloaded method 2" time="2.8832719326019287"/>
-      <test description="call non-overridden virtual method with double" time="2.542046070098877"/>
-      <test description="call python-overridden virtual method from Python" time="1.4986679553985596"/>
-      <test description="call python-overridden virtual method from C++" time="4.81919002532959"/>
+      <test description="call function with no arguments" time="2.112436056137085"/>
+      <test description="call function taking 3 doubles" time="4.19792914390564"/>
+      <test description="call class constructor with no arguments" time="5.388163089752197"/>
+      <test description="call class constructor with double" time="8.56859803199768"/>
+      <test description="call simple method" time="1.869739055633545"/>
+      <test description="call overloaded method 1" time="4.858757972717285"/>
+      <test description="call overloaded method 2" time="4.171832084655762"/>
+      <test description="call non-overridden virtual method with double" time="3.0069761276245117"/>
+      <test description="call python-overridden virtual method from Python" time="1.4865138530731201"/>
+      <test description="call python-overridden virtual method from C++" time="3.0540101528167725"/>
     </sip>
+    <cython module-file-size="86360">
+      <test description="call function with no arguments" time="1.0775020122528076"/>
+      <test description="call function taking 3 doubles" time="1.5302808284759521"/>
+      <test description="call class constructor with no arguments" time="2.342258930206299"/>
+      <test description="call class constructor with double" time="2.3834280967712402"/>
+      <test description="call simple method" time="1.2569820880889893"/>
+      <test description="call overloaded method 1" time="1.3224010467529297"/>
+      <test description="call overloaded method 2" time="1.5432779788970947"/>
+      <test description="call non-overridden virtual method with double" time="1.413595199584961"/>
+      <test description="call python-overridden virtual method from Python" time="1.1116960048675537"/>
+      <test description="call python-overridden virtual method from C++" time="0.43268394470214844"/>
+    </cython>
   </results>
 </pybindgen-benchmarks>
