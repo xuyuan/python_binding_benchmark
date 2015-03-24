@@ -22,17 +22,6 @@ def main(argv):
     res = dom.getElementsByTagName("results")[0]
     tools = [e for e in res.childNodes if e.nodeType == Node.ELEMENT_NODE]
 
-    # get the pybindgen revno
-    pbg_env = dom.getElementsByTagName("environment")[0].getElementsByTagName("pybindgen")[0]
-    pbg_txt = getText(pbg_env.childNodes).split("\n")
-    for l in pbg_txt:
-        k, s, v = l.partition(':')
-        k = k.strip()
-        if k == 'revno':
-            v = v.strip()
-            revno = v
-            break
-
     num_tests = len(tools[0].getElementsByTagName("test"))
     shutil.rmtree(outdir, True)
     os.mkdir(outdir)
@@ -80,10 +69,9 @@ def main(argv):
 <body>
 
   <div>Details in the <a href=\"%s\">Raw XML file</a>.
-  <a href=\"http://bazaar.launchpad.net/~gjc/pybindgen/trunk/files/%s/benchmarks/\">Source files for the benchmarks</a>.
   </div>
 
-""" % (os.path.basename(input_fname), revno)
+""" % os.path.basename(input_fname)
 
     for fig in figures:
         print >> index_html, """

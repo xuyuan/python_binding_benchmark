@@ -5,9 +5,6 @@ from xml.dom.minidom import getDOMImplementation
 from timeit import Timer
 import subprocess
 
-sys.path.insert(0, os.path.join(os.path.dirname(os.path.abspath(__file__)),
-                                '..', 'build', 'default', 'benchmarks'))
-
 
 TIMES = 10000000
 TIMES1 = TIMES/4
@@ -129,23 +126,23 @@ def main():
 
     print "pybindgen results:"
     pbg = res.appendChild(dom.createElement('pybindgen'))
-    pbg.setAttribute("module-file-size", repr(os.stat("build/default/benchmarks/testapi_pybindgen.so").st_size))
+    pbg.setAttribute("module-file-size", repr(os.stat("testapi_pybindgen.so").st_size))
     bench(testapi_pybindgen, dom, pbg)
 
     print "boost_python results:"
     bp = res.appendChild(dom.createElement('boost_python'))
-    bp.setAttribute("module-file-size", repr(os.stat("build/default/benchmarks/testapi_boost.so").st_size))
+    bp.setAttribute("module-file-size", repr(os.stat("testapi_boost.so").st_size))
     bench(testapi_boost, dom, bp)
 
     print "swig results:"
     sw = res.appendChild(dom.createElement('swig'))
-    sw.setAttribute("module-file-size", repr(os.stat("build/default/benchmarks/_testapi_swig.so").st_size))
-    sw.setAttribute("module-python-file-size", repr(os.stat("build/default/benchmarks/testapi_swig.py").st_size))
+    sw.setAttribute("module-file-size", repr(os.stat("_testapi_swig.so").st_size))
+    sw.setAttribute("module-python-file-size", repr(os.stat("testapi_swig.py").st_size))
     bench(testapi_swig, dom, sw)
 
     print "sip results:"
     sip = res.appendChild(dom.createElement('sip'))
-    sip.setAttribute("module-file-size", repr(os.stat("build/default/benchmarks/testapi_sip.so").st_size))
+    sip.setAttribute("module-file-size", repr(os.stat("testapi_sip.so").st_size))
     bench(testapi_sip, dom, sip)
 
     if len(sys.argv) == 3:

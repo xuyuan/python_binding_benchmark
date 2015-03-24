@@ -1,6 +1,6 @@
 // -*- Mode: C++; c-file-style: "stroustrup"; indent-tabs-mode:nil; -*-
 
-%Module testapi_sip 0
+%Module testapi_sip
 
 
 void func1 ();
