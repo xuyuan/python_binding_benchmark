@@ -1,0 +1,220 @@
+<?xml version="1.0" ?>
+<pybindgen-benchmarks>
+  <environment>
+    <compiler>Using built-in specs.
+COLLECT_GCC=g++
+COLLECT_LTO_WRAPPER=/usr/lib/gcc/x86_64-linux-gnu/4.9/lto-wrapper
+Target: x86_64-linux-gnu
+Configured with: ../src/configure -v --with-pkgversion='Ubuntu 4.9.1-16ubuntu6' --with-bugurl=file:///usr/share/doc/gcc-4.9/README.Bugs --enable-languages=c,c++,java,go,d,fortran,objc,obj-c++ --prefix=/usr --program-suffix=-4.9 --enable-shared --enable-linker-build-id --libexecdir=/usr/lib --without-included-gettext --enable-threads=posix --with-gxx-include-dir=/usr/include/c++/4.9 --libdir=/usr/lib --enable-nls --with-sysroot=/ --enable-clocale=gnu --enable-libstdcxx-debug --enable-libstdcxx-time=yes --enable-gnu-unique-object --disable-vtable-verify --enable-plugin --with-system-zlib --disable-browser-plugin --enable-java-awt=gtk --enable-gtk-cairo --with-java-home=/usr/lib/jvm/java-1.5.0-gcj-4.9-amd64/jre --enable-java-home --with-jvm-root-dir=/usr/lib/jvm/java-1.5.0-gcj-4.9-amd64 --with-jvm-jar-dir=/usr/lib/jvm-exports/java-1.5.0-gcj-4.9-amd64 --with-arch-directory=amd64 --with-ecj-jar=/usr/share/java/eclipse-ecj.jar --enable-objc-gc --enable-multiarch --disable-werror --with-arch-32=i686 --with-abi=m64 --with-multilib-list=m32,m64,mx32 --enable-multilib --with-tune=generic --enable-checking=release --build=x86_64-linux-gnu --host=x86_64-linux-gnu --target=x86_64-linux-gnu
+Thread model: posix
+gcc version 4.9.1 (Ubuntu 4.9.1-16ubuntu6) 
+</compiler>
+    <python>2.7.8 (default, Oct 20 2014, 15:05:19) 
+[GCC 4.9.1]</python>
+    <swig>
+SWIG Version 2.0.12
+
+Compiled with g++ [x86_64-unknown-linux-gnu]
+
+Configured options: +pcre
+
+Please see http://www.swig.org for reporting bugs and further information
+</swig>
+    <boost_python>Package: libboost-python-dev
+Status: install ok installed
+Priority: optional
+Section: libdevel
+Installed-Size: 27
+Maintainer: Ubuntu Developers &lt;ubuntu-devel-discuss@lists.ubuntu.com&gt;
+Architecture: amd64
+Source: boost-defaults
+Version: 1.55.0.1~ubuntu1
+Depends: libboost-python1.55-dev
+Description: Boost.Python Library development files (default version)
+ This package forms part of the Boost C++ Libraries collection.
+ .
+ The Boost Python Library is used to quickly and easily export a C++
+ library to Python such that the Python interface is very similar to
+ the C++ interface. It is designed to be minimally intrusive on your
+ C++ design. In most cases, you should not have to alter your C++
+ classes in any way in order to use them with Boost.Python.  The
+ system should simply &quot;reflect&quot; your C++ classes and functions into
+ Python. The major features of Boost.Python include support for:
+ Subclassing extension types in Python, Overriding virtual functions
+ in Python, Member function Overloading, Automatic wrapping of
+ numeric operators among others.
+ .
+ This package also contains the pyste Boost.Python code generator that
+ allows the user to specify classes and functions to be exported using
+ a simple interface file, which following the Boost.Python's
+ philosophy, is simple Python code.
+ .
+ This package allows development of a Python interface for all current
+ versions of Python in Debian.  Code using this library will need also
+ one of the Python development packages.
+ .
+ This package is a dependency package, which depends on Debian's default
+ Boost version (currently 1.55).
+Homepage: http://www.boost.org/libs/python/
+Original-Maintainer: Debian Boost Team &lt;pkg-boost-devel@lists.alioth.debian.org&gt;
+</boost_python>
+    <pybindgen>bzr: ERROR: Not a branch: &quot;/home/xu/projects/dai/python_binding_benchmark/&quot;.
+</pybindgen>
+    <cpu>processor	: 0
+vendor_id	: GenuineIntel
+cpu family	: 6
+model		: 42
+model name	: Intel(R) Core(TM) i7-2640M CPU @ 2.80GHz
+stepping	: 7
+microcode	: 0x26
+cpu MHz		: 3212.453
+cache size	: 4096 KB
+physical id	: 0
+siblings	: 4
+core id		: 0
+cpu cores	: 2
+apicid		: 0
+initial apicid	: 0
+fpu		: yes
+fpu_exception	: yes
+cpuid level	: 13
+wp		: yes
+flags		: fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush dts acpi mmx fxsr sse sse2 ss ht tm pbe syscall nx rdtscp lm constant_tsc arch_perfmon pebs bts nopl xtopology nonstop_tsc aperfmperf eagerfpu pni pclmulqdq dtes64 monitor ds_cpl vmx smx est tm2 ssse3 cx16 xtpr pdcm pcid sse4_1 sse4_2 x2apic popcnt tsc_deadline_timer aes xsave avx lahf_lm ida arat epb xsaveopt pln pts dtherm tpr_shadow vnmi flexpriority ept vpid
+bogomips	: 5581.98
+clflush size	: 64
+cache_alignment	: 64
+address sizes	: 36 bits physical, 48 bits virtual
+power management:
+
+processor	: 1
+vendor_id	: GenuineIntel
+cpu family	: 6
+model		: 42
+model name	: Intel(R) Core(TM) i7-2640M CPU @ 2.80GHz
+stepping	: 7
+microcode	: 0x26
+cpu MHz		: 3299.953
+cache size	: 4096 KB
+physical id	: 0
+siblings	: 4
+core id		: 0
+cpu cores	: 2
+apicid		: 1
+initial apicid	: 1
+fpu		: yes
+fpu_exception	: yes
+cpuid level	: 13
+wp		: yes
+flags		: fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush dts acpi mmx fxsr sse sse2 ss ht tm pbe syscall nx rdtscp lm constant_tsc arch_perfmon pebs bts nopl xtopology nonstop_tsc aperfmperf eagerfpu pni pclmulqdq dtes64 monitor ds_cpl vmx smx est tm2 ssse3 cx16 xtpr pdcm pcid sse4_1 sse4_2 x2apic popcnt tsc_deadline_timer aes xsave avx lahf_lm ida arat epb xsaveopt pln pts dtherm tpr_shadow vnmi flexpriority ept vpid
+bogomips	: 5581.98
+clflush size	: 64
+cache_alignment	: 64
+address sizes	: 36 bits physical, 48 bits virtual
+power management:
+
+processor	: 2
+vendor_id	: GenuineIntel
+cpu family	: 6
+model		: 42
+model name	: Intel(R) Core(TM) i7-2640M CPU @ 2.80GHz
+stepping	: 7
+microcode	: 0x26
+cpu MHz		: 3239.687
+cache size	: 4096 KB
+physical id	: 0
+siblings	: 4
+core id		: 1
+cpu cores	: 2
+apicid		: 2
+initial apicid	: 2
+fpu		: yes
+fpu_exception	: yes
+cpuid level	: 13
+wp		: yes
+flags		: fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush dts acpi mmx fxsr sse sse2 ss ht tm pbe syscall nx rdtscp lm constant_tsc arch_perfmon pebs bts nopl xtopology nonstop_tsc aperfmperf eagerfpu pni pclmulqdq dtes64 monitor ds_cpl vmx smx est tm2 ssse3 cx16 xtpr pdcm pcid sse4_1 sse4_2 x2apic popcnt tsc_deadline_timer aes xsave avx lahf_lm ida arat epb xsaveopt pln pts dtherm tpr_shadow vnmi flexpriority ept vpid
+bogomips	: 5581.98
+clflush size	: 64
+cache_alignment	: 64
+address sizes	: 36 bits physical, 48 bits virtual
+power management:
+
+processor	: 3
+vendor_id	: GenuineIntel
+cpu family	: 6
+model		: 42
+model name	: Intel(R) Core(TM) i7-2640M CPU @ 2.80GHz
+stepping	: 7
+microcode	: 0x26
+cpu MHz		: 2203.468
+cache size	: 4096 KB
+physical id	: 0
+siblings	: 4
+core id		: 1
+cpu cores	: 2
+apicid		: 3
+initial apicid	: 3
+fpu		: yes
+fpu_exception	: yes
+cpuid level	: 13
+wp		: yes
+flags		: fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush dts acpi mmx fxsr sse sse2 ss ht tm pbe syscall nx rdtscp lm constant_tsc arch_perfmon pebs bts nopl xtopology nonstop_tsc aperfmperf eagerfpu pni pclmulqdq dtes64 monitor ds_cpl vmx smx est tm2 ssse3 cx16 xtpr pdcm pcid sse4_1 sse4_2 x2apic popcnt tsc_deadline_timer aes xsave avx lahf_lm ida arat epb xsaveopt pln pts dtherm tpr_shadow vnmi flexpriority ept vpid
+bogomips	: 5581.98
+clflush size	: 64
+cache_alignment	: 64
+address sizes	: 36 bits physical, 48 bits virtual
+power management:
+
+</cpu>
+    <CXXFLAGS>-O2 -g</CXXFLAGS>
+  </environment>
+  <results>
+    <pybindgen module-file-size="56168">
+      <test description="call function with no arguments" time="1.1371619701385498"/>
+      <test description="call function taking 3 doubles" time="2.4281749725341797"/>
+      <test description="call class constructor with no arguments" time="2.4675450325012207"/>
+      <test description="call class constructor with double" time="6.711143970489502"/>
+      <test description="call simple method" time="1.5005829334259033"/>
+      <test description="call overloaded method 1" time="4.155841112136841"/>
+      <test description="call overloaded method 2" time="1.8909149169921875"/>
+      <test description="call non-overridden virtual method with double" time="2.1038191318511963"/>
+      <test description="call python-overridden virtual method from Python" time="1.185917854309082"/>
+      <test description="call python-overridden virtual method from C++" time="3.022844076156616"/>
+    </pybindgen>
+    <boost_python module-file-size="583016">
+      <test description="call function with no arguments" time="1.4615600109100342"/>
+      <test description="call function taking 3 doubles" time="2.227130889892578"/>
+      <test description="call class constructor with no arguments" time="6.22730278968811"/>
+      <test description="call class constructor with double" time="6.997045040130615"/>
+      <test description="call simple method" time="2.87703800201416"/>
+      <test description="call overloaded method 1" time="2.958601951599121"/>
+      <test description="call overloaded method 2" time="3.1763219833374023"/>
+      <test description="call non-overridden virtual method with double" time="2.5165510177612305"/>
+      <test description="call python-overridden virtual method from Python" time="1.3930511474609375"/>
+      <test description="call python-overridden virtual method from C++" time="3.179961919784546"/>
+    </boost_python>
+    <swig module-file-size="281760" module-python-file-size="3700">
+      <test description="call function with no arguments" time="1.3511769771575928"/>
+      <test description="call function taking 3 doubles" time="2.2315988540649414"/>
+      <test description="call class constructor with no arguments" time="52.95554995536804"/>
+      <test description="call class constructor with double" time="59.599579095840454"/>
+      <test description="call simple method" time="3.8350179195404053"/>
+      <test description="call overloaded method 1" time="6.428094148635864"/>
+      <test description="call overloaded method 2" time="5.602816104888916"/>
+      <test description="call non-overridden virtual method with double" time="4.6888110637664795"/>
+      <test description="call python-overridden virtual method from Python" time="3.3473751544952393"/>
+      <test description="call python-overridden virtual method from C++" time="4.579927206039429"/>
+    </swig>
+    <sip module-file-size="79376">
+      <test description="call function with no arguments" time="1.8898899555206299"/>
+      <test description="call function taking 3 doubles" time="2.6068480014801025"/>
+      <test description="call class constructor with no arguments" time="4.562607049942017"/>
+      <test description="call class constructor with double" time="8.57718801498413"/>
+      <test description="call simple method" time="3.40289306640625"/>
+      <test description="call overloaded method 1" time="4.7763519287109375"/>
+      <test description="call overloaded method 2" time="2.8832719326019287"/>
+      <test description="call non-overridden virtual method with double" time="2.542046070098877"/>
+      <test description="call python-overridden virtual method from Python" time="1.4986679553985596"/>
+      <test description="call python-overridden virtual method from C++" time="4.81919002532959"/>
+    </sip>
+  </results>
+</pybindgen-benchmarks>
